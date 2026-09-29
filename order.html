@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Order — Ginetics Juice</title>
+    <meta name="description" content="Order Ginetics Juice or get in touch by email or Instagram. We ship in the DFW area." />
+    <link rel="icon" href="images/logo-mark.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="order-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html" aria-label="Ginetics Juice home">
+          <img class="logo-mark" src="images/logo-mark.jpg" alt="Ginetics Juice" width="1024" height="1024" />
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span></button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="menu.html">Menu</a>
+          <a href="learn.html">Learn</a>
+          <a href="about.html">Our Story</a>
+          <a href="faq.html">FAQ</a>
+          <a class="nav-cta" href="order.html" aria-current="page">Order</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="order-layout">
+      <div class="order-parallax" aria-hidden="true">
+        <div class="order-parallax-inner">
+          <img src="images/order-scroll.jpg" alt="" width="1024" height="4088" />
+        </div>
+      </div>
+
+      <article class="order-sheet">
+        <p class="eyebrow">Order</p>
+        <h1>Order &amp; inquiries</h1>
+        <p class="lede">Email a juice order or ask a question. We only ship in the DFW area.</p>
+
+        <address class="contact-card">
+          <p><strong>Address</strong><br />2400 Ace Ln.<br />Lewisville, TX 75067</p>
+          <p><strong>Call / text</strong><br /><a href="tel:+14694649368">(469) 464-9368</a></p>
+          <p><strong>Email</strong><br /><a href="mailto:gineticjuices@gmail.com">gineticjuices@gmail.com</a></p>
+          <p><strong>Social</strong><br /><a href="https://www.instagram.com/ginetics_juice/" rel="noopener noreferrer">Instagram @ginetics_juice</a></p>
+        </address>
+
+        <h2>Order juices</h2>
+        <p class="form-note">We only ship to the DFW area. Orders outside Dallas–Fort Worth cannot be delivered.</p>
+        <form class="contact-form" id="visit-form" novalidate>
+          <div class="field-row">
+            <label>Name <input type="text" name="name" autocomplete="name" required /></label>
+            <label>Email <input type="email" name="email" autocomplete="email" required /></label>
+          </div>
+          <fieldset>
+            <legend>I’d like</legend>
+            <div class="checks">
+              <label class="check"><input type="checkbox" name="juices" value="Green reset" /> Green reset</label>
+              <label class="check"><input type="checkbox" name="juices" value="Citrus bright" /> Citrus bright</label>
+              <label class="check"><input type="checkbox" name="juices" value="Root & glow" /> Root &amp; glow</label>
+              <label class="check"><input type="checkbox" name="juices" value="Weekly fridge set" /> Weekly fridge set</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Type of product</legend>
+            <p class="field-hint">Check bottles, pouches, or both, then pick a quantity from the menu.</p>
+            <div class="product-picks">
+              <div class="product-pick">
+                <label class="product-pick-head">
+                  <input type="checkbox" name="packaging" value="8 oz bottles" data-qty="bottleQty" />
+                  8 oz bottles
+                </label>
+                <select name="bottleQty" class="qty-select" data-max="24" aria-label="Number of 8 oz bottles" disabled>
+                  <option value="">Select quantity</option>
+                </select>
+              </div>
+              <div class="product-pick">
+                <label class="product-pick-head">
+                  <input type="checkbox" name="packaging" value="11 oz reusable pouches" data-qty="pouchQty" />
+                  11 oz reusable pouches
+                </label>
+                <select name="pouchQty" class="qty-select" data-max="24" aria-label="Number of 11 oz pouches" disabled>
+                  <option value="">Select quantity</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Shipping address</legend>
+            <label>Street <input type="text" name="street" autocomplete="street-address" required /></label>
+            <div class="field-row field-row-3">
+              <label>City <input type="text" name="city" autocomplete="address-level2" required /></label>
+              <label>State <input type="text" name="state" autocomplete="address-level1" value="TX" required /></label>
+              <label>ZIP <input type="text" name="zip" autocomplete="postal-code" inputmode="numeric" required /></label>
+            </div>
+          </fieldset>
+          <label>Tastes, allergies, boosts
+            <textarea name="message" rows="5" required placeholder="Dietary notes, ginger yes/no, neighborhood…"></textarea>
+          </label>
+          <p class="form-status" hidden></p>
+          <button class="btn btn-primary" type="submit">Send order email</button>
+        </form>
+
+        <h2>Shipping</h2>
+        <p>
+          We only ship to the DFW area. Unfortunately, we are unable to schedule a
+          specific delivery time; packages may arrive sooner or later than expected.
+          Some delivery companies do not operate on Sundays, so we cannot guarantee
+          packages will arrive on Mondays. The cost of shipping may vary, including
+          options for free shipping specials, 2-day, and overnight delivery via
+          FedEx or Amazon.
+        </p>
+
+        <h2>Something else?</h2>
+        <form class="contact-form" id="inquiry-form" novalidate>
+          <div class="field-row">
+            <label>Name <input type="text" name="name" autocomplete="name" required /></label>
+            <label>Email <input type="email" name="email" autocomplete="email" required /></label>
+          </div>
+          <label>Message <textarea name="message" rows="4" required></textarea></label>
+          <p class="form-status" hidden></p>
+          <button class="btn btn-primary" type="submit">Send inquiry</button>
+        </form>
+
+        <h2 id="subscribe-form">Subscribe</h2>
+        <p>Get restocks, specials, and DFW shipping notes by email. Unsubscribe anytime.</p>
+        <form class="contact-form" id="subscribe-mail-form" novalidate>
+          <div class="field-row">
+            <label>Name <input type="text" name="name" autocomplete="name" required /></label>
+            <label>Email <input type="email" name="email" autocomplete="email" required /></label>
+          </div>
+          <p class="form-status" hidden></p>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+
+        <h2 id="unsubscribe-form">Unsubscribe</h2>
+        <p>We’ll take you off the email list. You may still get messages about an order you placed.</p>
+        <form class="contact-form" id="unsubscribe-mail-form" novalidate>
+          <label>Email <input type="email" name="email" autocomplete="email" required /></label>
+          <p class="form-status" hidden></p>
+          <button class="btn btn-ghost" type="submit">Unsubscribe from emails</button>
+        </form>
+
+        <h2 id="survey-form">Survey &amp; review</h2>
+        <p>
+          Rate your juices and tell us how we did. For a public review, tag
+          <a href="https://www.instagram.com/ginetics_juice/" rel="noopener noreferrer">@ginetics_juice</a>
+          on Instagram.
+        </p>
+        <form class="contact-form" id="survey-mail-form" novalidate>
+          <div class="field-row">
+            <label>Name <input type="text" name="name" autocomplete="name" required /></label>
+            <label>Email <input type="email" name="email" autocomplete="email" required /></label>
+          </div>
+          <fieldset>
+            <legend>How would you rate Ginetics?</legend>
+            <div class="checks">
+              <label class="check"><input type="radio" name="rating" value="5" required /> 5 — Excellent</label>
+              <label class="check"><input type="radio" name="rating" value="4" /> 4</label>
+              <label class="check"><input type="radio" name="rating" value="3" /> 3</label>
+              <label class="check"><input type="radio" name="rating" value="2" /> 2</label>
+              <label class="check"><input type="radio" name="rating" value="1" /> 1 — Poor</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><span>Which juices did you try? <span class="optional">(optional)</span></span></legend>
+            <div class="checks">
+              <label class="check"><input type="checkbox" name="juices" value="Green reset" /> Green reset</label>
+              <label class="check"><input type="checkbox" name="juices" value="Citrus bright" /> Citrus bright</label>
+              <label class="check"><input type="checkbox" name="juices" value="Root & glow" /> Root &amp; glow</label>
+              <label class="check"><input type="checkbox" name="juices" value="Weekly fridge set" /> Weekly fridge set</label>
+            </div>
+          </fieldset>
+          <label>Comments
+            <textarea name="message" rows="4" required placeholder="Taste, delivery, what you’d like next…"></textarea>
+          </label>
+          <p class="form-status" hidden></p>
+          <button class="btn btn-primary" type="submit">Send survey</button>
+        </form>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p><strong>Ginetics Juice</strong></p>
+        <p>
+          <a href="index.html">Home</a> ·
+          <a href="faq.html">FAQ</a> ·
+          <a href="disclaimer.html">Disclaimer</a> ·
+          <a href="privacy.html">Privacy Policy</a>
+        </p>
+        <p>© 2025 Ginetics Juice. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
